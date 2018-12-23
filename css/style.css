@@ -51,6 +51,7 @@ header {
 .logo {
     float: left;
     margin-top: 50px;
+    margin-left: 10px;
 
 }
 
@@ -84,6 +85,7 @@ header {
 
 #wrap {
     clear: both;
+    text-align: center;
     font-family: 'Quicksand', sans-serif;
     font-family: "Noto Sans JP";
 }
