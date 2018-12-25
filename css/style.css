@@ -88,6 +88,9 @@ header {
     text-align: center;
     font-family: 'Quicksand', sans-serif;
     font-family: "Noto Sans JP";
+    background-color: #ffffff;
+    margin-top: 200px;
+    padding: 35px 0;
 }
 
 .content {
@@ -100,6 +103,7 @@ footer {
     text-align: center;
     color: #ffffff;
     padding: 20px 0;
+    background-color: #767671;
 
 }
 
@@ -165,3 +169,84 @@ footer small {
     background-size: cover;
 
 }
+
+.main-center{
+    width: 940px;
+    margin: 0 auto;
+
+}
+
+h1 {
+    font-family: 'Quicksand', sans-serif;
+    font-family: "Noto Sans JP";
+    font-size: 36px;
+    border-bottom: 1px solid #cccccc;
+
+}
+
+h2 {
+    font-family: 'Quicksand', sans-serif;
+    font-family: "Noto Sans JP";
+    font-size: 24px;
+}
+
+section {
+    margin-bottom: 35px;
+}
+
+.icon::before{
+    content: "";
+    padding-right: 10px;
+    border-left: 7px solid #9cb4a4;
+}
+
+#about .profile-txt {
+    width: 540px;
+    float: left;
+}
+
+#about .profile-txt span {
+    font-weight: bold;
+
+}
+
+#about .profile-image {
+    float :right;
+
+}
+
+.clearfix::after {
+    content: "";
+    display: block;
+    clear: both;
+}
+
+#about .career th {
+    width: 240px;
+    background-color: #f0f0f0;
+    padding: 12px 0;
+    border: 1px solid #cccccc;
+
+}
+
+#about .career td {
+    width: 660px;
+    padding: 12px 40px;
+    border: 1px solid #cccccc;
+}
+
+table {
+    border-spacing: 0;
+    border-collapse: collapse;
+}
+
+#about {
+    background-image: url(../images/about_background.png);
+    background-repeat: no-repeat;
+    background-position: center top;
+    background-attachment: fixed;
+    background-size: 100% auto;
+
+}
+
+
