@@ -153,10 +153,11 @@ footer small {
 
 }
 
+
 #index footer{
-    width: 960px;
+    /*width: 960px; */
     margin: 150px auto 0 auto;
-    text-align: left;
+    /*text-align: left;*/
 
 }
 
