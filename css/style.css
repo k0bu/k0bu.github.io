@@ -158,10 +158,10 @@ footer small {
 }
 
 #index {
-    background-image: url(../imgaes/index_background.png);
+    background-image: url(../images/index_background.png);
     background-repeat: no-repeat;
     background-position: center center;
     background-attachment: fixed;
     background-size: cover;
-    
+
 }
