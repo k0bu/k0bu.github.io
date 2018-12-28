@@ -13,7 +13,7 @@ body {
 /* Resetting the style for each client*/
 p, h1, h2, h3, h4, h5, h6 {
     margin-top: 0;
-
+    font-family: 'Quicksand', sans-serif;
 }
 
 img {
@@ -194,7 +194,7 @@ footer small {
 
 h1 {
     font-family: 'Quicksand', sans-serif;
-    font-family: "Noto Sans JP";
+    /*font-family: "Noto Sans JP";*/
     font-size: 36px;
     border-bottom: 1px solid #cccccc;
 
@@ -206,8 +206,16 @@ h2 {
     font-size: 24px;
 }
 
+p {
+    font-family: 'Quicksand', sans-serif;
+}
+
 section {
     margin-bottom: 35px;
+}
+
+.icon{
+    font-family: 'Quicksand', sans-serif;
 }
 
 .icon:before{
@@ -217,9 +225,12 @@ section {
 }
 
 #about .profile-txt {
+    font-family: 'Quicksand', sans-serif;
     width: 540px;
     float: left;
 }
+
+
 
 #about .profile-txt span {
     font-weight: bold;
@@ -238,6 +249,7 @@ section {
 }
 
 #about .career th {
+    font-family: 'Quicksand', sans-serif;
     width: 240px;
     background-color: #f0f0f0;
     padding: 12px 0;
@@ -246,6 +258,7 @@ section {
 }
 
 #about .career td {
+    font-family: 'Quicksand', sans-serif;
     width: 660px;
     padding: 12px 40px;
     border: 1px solid #cccccc;
@@ -290,6 +303,7 @@ table {
 
 .sidebar h2 {
     margin-bottom: 10px;
+    font-family: 'Quicksand', sans-serif;
 }
 
 .sidebar ul {
@@ -303,6 +317,26 @@ table {
 
 a img:hover {
     opacity: 0.8;
+}
+
+#media {
+    background-image: url(../images/about_background.png);
+    background-repeat: no-repeat;
+    background-position: center top;
+    background-attachment: fixed;
+    background-size: 100% auto;
+
+}
+
+#media .images-list li{
+    float: left;
+    list-style: none;
+    margin: 0 20px 15px 0;
+
+}
+
+#media .images-list li:nth-child(3n) {
+    margin-right: 0;
 }
 
 
