@@ -2,14 +2,16 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <title>Contact</title>
+  <title>Contact(for studying form)</title>
   <link href="css/style.css" rel="stylesheet">
   <!-- Google Fonts Quicksand-->
   <link href="https://fonts.googleapis.com/css?family=Quicksand:400,700" rel="stylesheet">
   <!-- Google Japanese Fonts-->
   <link href="https://fonts.googleapis.com/css?family=Noto+Sans+JP" rel="stylesheet">
 </head>
-<body>
+
+
+<body id="contact">
 
 <header>
   <div class="logo">
@@ -27,6 +29,62 @@
   </nav>
 </header>
 
-<h1>Contact</h1>
+<div id="wrap">
+  <div class="content">
+    <div class="main-center">
+      <h1>Contact</h1>
+      <p>
+        This page is to test html format.
+      </p>
+      
+      <section>
+        <h2 class="icon">Contact form</h2>
+        <div class="form">
+          <form>
+            <dl>
+              <dt><span class="required">Name</span></dt>
+                <dd><input type="text" name="name" class="name" required> </dd>
+              <dt><span class="required">Mail Address</span></dt>
+                <dd><input type="email" name="email" class="email" required> </dd>
+              <dt>Phone Number</dt>
+                <dd><input type="tel" name="tel" class="tel"></dd>
+              <dt>Message</dt>
+                <dd>
+                  <textarea name="message" class="message"></textarea>
+                </dd>
+              <dt>Option</dt>
+                <dd>
+                  <select name="type" class="type">
+                    <option value="1">first option</option>
+                    <option value="2">second option</option>
+                    <option value="3">third option</option>
+                  </select>
+                </dd>
+              <dt>Radio Button</dt>
+                <dd>
+                  <input type="radio" name="contact" value="One">Select One
+                  <input type="radio" name="contact" value="Two">Select Two
+                </dd>
+            </dl>
+            
+            <button type="submit" class="btn">Send</button>
+          </form>
+          
+          <div class="attention">
+            <p>Items which have "<span class="required"></span>" must be answered to send the form.</p>
+          </div>
+          
+        </div>
+      </section>
+    </div>
+  </div>
+</div>
+
+
+
+
+
+
+
 </body>
 </html>
