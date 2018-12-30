@@ -1,5 +1,7 @@
 $(document).ready(function(){
     'use strict';
+    console.log('Loading main.js...');
+
     paper.install(window);
     paper.setup(document.getElementById('mainCanvas'));
     
@@ -14,15 +16,28 @@ $(document).ready(function(){
 
     paper.setup(document.getElementById('subCanvas'));
 
+
     let tool = new Tool();
     tool.onMouseDown = function(event){
         var clickedPosition = event.point;
-        let c = Shape.Circle(clickedPosition.x, clickedPosition.y, 20);
+        let c = Shape.Circle(clickedPosition.x, clickedPosition.y, 80);       
         c.fillColor = new Color (
             clickedPosition.x/400, 
             clickedPosition.y/400, 
             (clickedPosition.x+clickedPosition.y)/800
-            );
+        );
+
+        let text = new PointText(clickedPosition);
+        text.justification = 'center';
+        text.fillColor = new Color(
+            1 - clickedPosition.x/400, 
+            1 - clickedPosition.y/400, 
+            1 - (clickedPosition.x+clickedPosition.y)/800
+        );
+        text.fontSize = 20;
+        text.content = 'Hello World!';
+
+        
     };
 
 
