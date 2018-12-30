@@ -19,7 +19,7 @@ $(document).ready(function(){
 
     let tool = new Tool();
     tool.onMouseDown = function(event){
-        var clickedPosition = event.point;
+        let clickedPosition = event.point;
         let c = Shape.Circle(clickedPosition.x, clickedPosition.y, 80);       
         c.fillColor = new Color (
             clickedPosition.x/400, 
