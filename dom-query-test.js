@@ -44,7 +44,7 @@ function printDOM(node, prefix){
     }
 }*/
 
-printDOM(document, '');
+//printDOM(document, '');
 
 
 $(document).ready(function(){

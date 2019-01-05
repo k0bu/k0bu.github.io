@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Ajax Server Html</title>
+  <link href="css/style.css" rel="stylesheet">
+  <link href="css/javascript.css" rel="stylesheet">
+  <!-- Google Fonts Quicksand-->
+  <link href="https://fonts.googleapis.com/css?family=Quicksand:400,700" rel="stylesheet">
+  <!-- Google Japanese Fonts-->
+  <link href="https://fonts.googleapis.com/css?family=Noto+Sans+JP" rel="stylesheet">
+  <!-- favicon, icon for the tab-->
+  <link href="favicon.ico" rel="shortcut icon">
+</head>
+
+
+<body>
+<script src="https://code.jquery.com/jquery-3.0.0.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/paper.js/0.10.2/paper-full.min.js"></script>
+
+<section>
+  <div id="wrap">
+    <div class="content">
+      <div class="main-center">
+        
+        <h1>Ajax Sample</h1>
+        
+        <div class="serverInfo">
+          <p>
+            <!-- This data-replace item has to be the same as what the ajax-server have defined.
+              This means it is easy to miss, since the coder has to hard code the same string value. -->
+            Server Platform: <span data-replace="platform">???</span><br />
+            Node.js Version: <span data-replace="nodeVersion">???</span><br />
+            Server Run Time: <span data-replace="uptime">???</span> seconds
+          </p>
+          <script src="ajax-sample.js"></script>
+        </div>
+        
+      </div>
+    </div>
+  </div>
+</section>
+
+
+
+
+
+</body>
+</html>
