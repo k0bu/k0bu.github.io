@@ -1,3 +1,5 @@
+import { normalize } from "path";
+
 // function refreshServerInfo() {
 //   const req = new XMLHttpRequest();
 //   req.addEventListener('load', function() {
@@ -32,12 +34,17 @@ $(document).ready(function(){
           $(`[data-replace="${p}"]`).text(data[p]);
         });
       },
-      function(jqXHR, textStatus,err){
+      function(jqXHR, textStatus, err){
         const $errorInfo = $('.error');
         console.error("Error has occured:" + err);
-        $errorINfo.text("Error: Cannot access the server.");
+        $errorInfo.text("Error: Cannot access the server.");
+        $errorInfo.css({
+          'margin-left': '20px',
+          'font-weight': 'normal'
+        });
         clearInterval(TimerID);
       }
     );
   }
 });
+
